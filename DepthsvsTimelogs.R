@@ -1,6 +1,10 @@
 ##### this script is based on one created by Todd Bond - todd.bond@uwa.edu.au
 
-detach("package:plyr", unload=TRUE)#will error - no worries
+detach("package:dplyr", unload=TRUE)#will error - no worries
+
+remove.packages("dplyr")
+install.packages("dplyr")
+
 library(tidyverse)
 options(dplyr.width = Inf) #enables head() to display all coloums
 library(lubridate)
@@ -10,8 +14,7 @@ library(readxl)
 library(galah)
 library("RColorBrewer")
 
-remove.packages("dplyr")
-install.packages("dplyr")
+
 
 
 
